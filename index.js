@@ -4,11 +4,10 @@ const {
   SecretsManagerClient,
   GetSecretValueCommand,
 } = require("@aws-sdk/client-secrets-manager");
-require("dotenv").config();
 
 app.use(express.static("public"));
 
-const secret_name = process.env.SECRET_NAME;
+const secret_name = "secret_terraform_challenge";
 const client = new SecretsManagerClient({
   region: "us-west-2",
 });
