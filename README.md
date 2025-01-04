@@ -1,1 +1,1 @@
-# terraform-aws-secrets-manager
+# Terraform AWS Secrets Manager
